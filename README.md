@@ -1,6 +1,50 @@
 # Cryptocurrencies
 ### CHALLENGE
 
+The goals of this challenge are to implement machine learning models, use resampling to attempt to address class imbalances and then evaluate the performance of machine learning models to assess credit risk for a sample data set. For details of the How To of this challenge please refer to the Appendix below.
+
+### Machine learning models & Resampling approaches where relevant:
+- sklearn.linear_model's LogisticRegression with solver='lbfgs' (the default solver in sklearn LogisticRegression), Oversample using RandomOverSampler and SMOTE algorithms
+- LogisticRegression as above, this time with Undersample using the cluster centroids algorithm
+- Again LinearRegression, using a combination over- and undersampling approach with SMOTEENN algorithm
+- Balanced Random Forest Classifier
+- Easy Ensemble AdaBoost Classifier
+
+### How to analyze model performance:
+How do I measure and compare the performance of multiple classification machine learning models ?
+
+We use several scoring mechanisms to assess performance of classification models, and we can we use the scores to compare models for their respective strenghts and weaknesses.
+- Confusion Matrix - depicts model predictions against actual observations, get a sense of the number of predicted versus actual trues, and the number of predicted vs actual falses
+- Precision - (How many selected items are relevant) the ratio of True Positives (TP) vs True Positives + False Positives (FP) (predeicted true but actually false)
+- Recall - (How many relevant items are selected) the ratio of TP vs TP + False Negative (predicted as false but actually true)
+- F1 - harmonic mean between precision and recall, score between 0 - 1, better is higher
+- Balanced Accuracy - for imbalanced data sets (like this example where the number of high risk candidates is very small compared to low risk) this score normalizes true positive and true negative predictions
+
+This analysis used the following to produce model performance scores for comparison:
+- sklearn.metrics's confusion_matrix
+- sklearn.metrics's balanced_accuracy_score
+- imblearn.metrics's classification_report_imbalanced, providing (among others) precision (labelled pre), recall (labelled rec) and F1 (labelled f1)
+
+### Summary and analysis of the models’ performance:
+
+
+
+
+
+
+
+
+
+
+
+**NOTE:**
+The following is I think an easy to understand qualitative statement on how to consider the performance of one model, rather than attempting to compare multiple models tackling the same challenge.
+
+How do I measure the performance of my model?
+
+A good fitting model is one where the difference between the actual or observed values and predicted values for the selected model is small and unbiased for train, validation and test data sets. (https://medium.com/datadriveninvestor/how-to-evaluate-the-performance-of-a-machine-learning-model-45063a7a38a7)
+
+In this challenge we employed only training and validation data, testing data was not employed, as the first step to chossing a model to test is to find a mdeol that looks strongest out of the typically available options.
 
 
 
