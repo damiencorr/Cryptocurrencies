@@ -54,7 +54,7 @@ You should have a DataFrame like the following:
 
 IMAGE!!!! data-Module-18-Challenge-1-clustering-cryptocurrencies-using-k-means
 
-![k-means](Challenge/data-Module-18-Challenge-1-clustering-cryptocurrencies-using-k-means.png)
+![k-means](Images/data-Module-18-Challenge-1-clustering-cryptocurrencies-using-k-means.png)
 
 ### Clustering Cryptocurrencies Using K-means
 You’ll use the KMeans algorithm from sklearn (Links to an external site.) to cluster the cryptocurrencies using the PCA data.
@@ -69,7 +69,7 @@ The DataFrame shows nine columns: Algorithm, ProofType, TotalCoinsMined, TotalCo
 
 IMAGE!!!! data-Module-18-Challenge-2-dataframe-clustered-df-visualizing-results
 
-![Viz results](Challenge/data-Module-18-Challenge-2-dataframe-clustered-df-visualizing-results.png)
+![Viz results](Images/data-Module-18-Challenge-2-dataframe-clustered-df-visualizing-results.png)
 
 ### Visualizing Results
 You’ll create data visualizations to present the final results.
