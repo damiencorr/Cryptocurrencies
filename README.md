@@ -1,14 +1,40 @@
 # Cryptocurrencies
 Columbia Data Analytics and Visualization Bootcamp Module 18 Challenge
 
+### CHALLENGE
+This challenge employs unsupervised learning to surface and visualize clusters of cryptocurrencies traded on the market.
+
+The original data is sourced from [CryptoCompare](https://min-api.cryptocompare.com/data/all/coinlist)
+
+### Preparing the data
+First the data is prepared, dummy data created to replace text features, and then standardized using the StandardScaler from sklearn, important prior to using PCA and K-means algorithms.
+
+### Reducing Data Dimensions Using PCA
+Next we use the PCA algorithm from sklearn to reduce the dimensions of the X DataFrame down to three principal components.
+
+### Clustering Cryptocurrencies Using K-means
+Then we use the KMeans algorithm from sklearn to cluster the cryptocurrencies using the PCA data. We generate an elbow curve to identify the number of clusters.
+
+### Visualizing Results
+Finally we create data visualizations to present the final results.
+- 3D scatter plot using Plotly Express to plot the clusters
+- hvplot.table to create a data table with all the current tradable cryptocurrencies. 
+- 2D scatter plot using hvplot.scatter to present the clustered data about cryptocurrencies having x="TotalCoinsMined" and y="TotalCoinSupply" to contrast the number of available coins versus the total number of mined coins. 
+
+![3D Scatter plot showing 4 clusters](images/3D-clusters.jpeg)
+
+![2D Scatter plot showing coins supply vs coins mined](images/2D-scatter-plot.jpeg)
 
 
 
 
-
-
-
-# Module 18 Challenge
+-
+-
+-
+-
+-
+-
+# APPENDIX - Module 18 Challenge - APPENDIX
 You and Martha have done your research. You understand what unsupervised learning is used for, how to process data, how to cluster, how to reduce your dimensions and what goes on when you use PCA. It’s time to put all these skills to use and create an analysis for your clients looking to get into the cryptocurrency market.
 In this challenge, you’ll use unsupervised learning to analyze data on the cryptocurrencies traded on the market.
 
