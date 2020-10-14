@@ -21,9 +21,9 @@ Finally we create data visualizations to present the final results.
 - hvplot.table to create a data table with all the current tradable cryptocurrencies. 
 - 2D scatter plot using hvplot.scatter to present the clustered data about cryptocurrencies having x="TotalCoinsMined" and y="TotalCoinSupply" to contrast the number of available coins versus the total number of mined coins. 
 
-![3D Scatter plot showing 4 clusters](images/3D-clusters.jpeg)
+![3D Scatter plot showing 4 clusters](Images/3D-clusters.jpg)
 
-![2D Scatter plot showing coins supply vs coins mined](images/2D-scatter-plot.jpeg)
+![2D Scatter plot showing coins supply vs coins mined](Images/2D-scatter-plot.jpg)
 
 
 
